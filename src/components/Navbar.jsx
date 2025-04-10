@@ -1,4 +1,4 @@
-"use client"
+
 import logo from "../assets/logo.png"
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-[#f8f3ee] py-4">
+    <nav className="bg-pink-100 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           
@@ -24,87 +24,37 @@ function Navbar() {
           <div className="hidden md:flex items-center justify-center space-x-8 flex-1 mx-10">
             <a
               href="/"
-              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase flex items-center"
+              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase relative group"
             >
-              Home
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              Accueil
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
             </a>
             <a
               href="/about"
-              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase flex items-center"
+              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase relative group"
             >
-              About
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              À propos
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
             </a>
             <a
               href="/catalogue"
-              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase flex items-center"
+              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase relative group"
             >
               Catalogue
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
             </a>
             <a
               href="/contact"
-              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase flex items-center"
+              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase relative group"
             >
               Contact
-              <svg
-                className="w-4 h-4 ml-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
             </a>
           </div>
 
          
           <div className="flex items-center space-x-4">
-         
-            <button className="text-gray-800 hover:text-[#d4a373] p-2">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                ></path>
-              </svg>
-            </button>
-
-         
+        
             <button
               onClick={redirectToWhatsApp}
               className="border border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 px-6 py-2 flex items-center transition-colors duration-300 uppercase text-sm font-medium"

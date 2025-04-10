@@ -1,98 +1,109 @@
-
-
-import { useState } from "react"
+import { useState, useEffect } from 'react';
+import slide1 from "../assets/hero/slide1.jpeg";
+import slide2 from "../assets/hero/slide2.jpg";
+import slide3 from "../assets/hero/slide3.jpeg";
 
 function Hero() {
-  const [currentSlide, setCurrentSlide] = useState(2)
-  const totalSlides = 3
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === totalSlides ? 1 : prev + 1))
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 1 ? totalSlides : prev - 1))
-  }
-
-  return (
-    <div className="relative bg-[#f8f3ee] h-[600px] overflow-hidden">
+  const [currentImage, setCurrentImage] = useState(0);
   
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture1.PNG-pFGjOCyo9Mzud2NeXRz9VTbgb4KSt4.png"
-          alt="Elegant nails with crystals"
-          className="w-full h-full object-cover"
-        />
+
+  const slides = [
+    {
+      image: slide1,
+      title: "Révélez Votre Beauté Naturelle",
+      paragraph: "Parce que chaque femme mérite de se sentir sublime, Maison Nawel vous offre des soins d'exception alliant expertise, innovation et raffinement. Entrez dans un univers où bien-être et élégance ne font qu'un."
+    },
+    {
+      image: slide2,
+      title: "Maison Nawel : L'Art de la Beauté",
+      paragraph: "Notre salon est bien plus qu'un espace de soins, c'est une expérience sur-mesure où chaque détail est pensé pour magnifier votre beauté. Entre savoir-faire et produits d'exception, laissez-vous choyer par nos experts."
+    },
+    {
+      image: slide3,
+      title: "Sublimez Chaque Instant",
+      paragraph: "Que ce soit pour un relooking, un soin du visage, une mise en beauté ou un moment de détente, Maison Nawel vous propose une parenthèse enchantée où votre bien-être est notre priorité."
+    }
+  ];
+
+  
+  const slidesCount = slides.length;
+
+ 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % slidesCount);
+    }, 5000);
+    
+    return () => clearInterval(interval);
+  }, []); 
+  
+  return (
+    <div className="relative h-screen overflow-hidden">
+    
+      <div className="relative h-full w-full">
+   
+        {slides.map((slide, index) => (
+          <div 
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              currentImage === index ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              backgroundImage: `url('${slide.image}')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+        ))}
+        
+       
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
-
+      
+  
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="text-center max-w-3xl mx-auto px-4">
+         
+          {slides.map((slide, index) => (
+            <div key={index} className={`${currentImage === index ? 'block' : 'hidden'}`}>
+              <h1 className={`text-4xl md:text-6xl font-bold text-white mb-6 transition-all duration-700 transform ${
+                currentImage === index ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+              }`}>
+                {slide.title}
+              </h1>
+              
+              <p className={`text-lg md:text-xl text-white mb-8 transition-all duration-700 delay-200 transform ${
+                currentImage === index ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+              }`}>
+                {slide.paragraph}
+              </p>
+            </div>
+          ))}
+          
      
-      <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
-        <div className="max-w-xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-light text-gray-900 leading-tight">
-            <span className="block"></span>
-            <span className="block"></span>
-            <span className="block"></span>
-          </h1>
-          <p className="mt-6 text-lg text-gray-600">
-       
-          </p>
-
-          {/* <button className="mt-8 border border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 px-10 py-3 uppercase text-sm font-medium transition-colors duration-300">
-            Shop Now
-          </button> */}
-        </div>
-
-       
-        <div className="absolute bottom-10 left-4 sm:left-8 lg:left-8 flex items-center space-x-6">
-          <button
-            onClick={prevSlide}
-            className="text-gray-800 hover:text-gray-600 transition-colors"
-            aria-label="Previous slide"
+          <button 
+            className="bg-[#d4a373] hover:bg-[#c29365] text-white px-8 py-3 uppercase font-medium transition-all duration-300 transform hover:scale-105"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-6 h-6"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
-
-          <span className="text-gray-800 font-medium">
-            {String(currentSlide).padStart(2, "0")}/{String(totalSlides).padStart(2, "0")}
-          </span>
-
-          <button
-            onClick={nextSlide}
-            className="text-gray-800 hover:text-gray-600 transition-colors"
-            aria-label="Next slide"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-6 h-6"
-            >
-              <path d="M9 18l6-6-6-6" />
-            </svg>
+            Découvrir nos collections
           </button>
         </div>
+      </div>
+      
+    
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
+        {slides.map((_, index) => (
+          <button 
+            key={index}
+            onClick={() => setCurrentImage(index)} 
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              currentImage === index ? 'bg-white scale-125' : 'bg-white bg-opacity-50'
+            }`}
+            aria-label={`Aller au slide ${index + 1}`}
+          />
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
