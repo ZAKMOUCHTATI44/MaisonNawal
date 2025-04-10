@@ -2,24 +2,63 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between">
-          <div className="mb-4 md:mb-0">
-            <h2 className="text-xl font-bold">Maison Nawal</h2>
-            <p className="mt-2">Votre salon de beauté de confiance</p>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Contact</h3>
-            <p>Email: contact@maisonnawal.com</p>
-            <p>Téléphone: +212 600 000 000</p>
-          </div>
-        </div>
+    <footer className="bg-pink-100 text-black py-10 px-4 rounded-t-3xl">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         
-        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Maison Nawal. Tous droits réservés.</p>
+      
+        <div className="text-center md:text-left">
+          <h2 className="text-2xl font-bold mb-4">MAISON NAWEL</h2>
+          <p className="text-md mb-4">
+            Maison Nawel, situé à Marrakech, vous offre des soins d’exception en coiffure, esthétique, onglerie et bien-être.
+            Profitez d’un moment de détente dans un cadre raffiné, où expertise et élégance se rencontrent pour révéler votre beauté.
+          </p>
+          <h3 className="text-xl font-bold my-4">0700–700057</h3>
+
+        
+          <div className="flex gap-4 justify-center md:justify-start mt-4">
+  <a
+    href="https://www.facebook.com/toncompte"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 border border-white rounded-full flex items-center justify-center text-xl hover:bg-white hover:text-pink-500 transition"
+  >
+    <i className="fab fa-facebook-f"></i>
+  </a>
+  <a
+    href="https://www.instagram.com/toncompte"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 border border-white rounded-full flex items-center justify-center text-xl hover:bg-white hover:text-pink-500 transition"
+  >
+    <i className="fab fa-instagram"></i>
+  </a>
+  <a
+    href="https://www.tiktok.com/@toncompte"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 border border-white rounded-full flex items-center justify-center text-xl hover:bg-white hover:text-pink-500 transition"
+  >
+    <i className="fab fa-tiktok"></i>
+  </a>
+</div>
+
         </div>
+
+     
+        <div className="border-t md:border-t-0 md:border-l border-white pl-0 md:pl-10 pt-6 md:pt-0 text-center md:text-left">
+          <h3 className="text-xl font-semibold mb-4">Contactez Nous</h3>
+          <p className="mb-2">N°6 Bd Mohamed VI, Marrakech 40000</p>
+          <p className="mb-2">Maisonnawel.2024@gmail.com</p>
+          <p className="mb-6">0700–700057</p>
+
+          <h4 className="text-lg font-semibold mb-2">Heure d'ouverture</h4>
+          <p>Lundi – Dimanche: 10h – 22H</p>
+        </div>
+      </div>
+
+     
+      <div className="text-center mt-10 text-sm border-t border-pink-300 pt-4">
+        &copy; {new Date().getFullYear()} Maison Nawel. Tous droits réservés.
       </div>
     </footer>
   );
