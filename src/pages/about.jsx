@@ -6,6 +6,8 @@ import AboutContent from '../components/about/AboutContent';
 import ServicesSection from '../components/ServicesSection';
 import StatsSection from '../components/about/StatsSection';
 import TeamSection from '../components/about/TeamSection';
+import WhyChooseUs from '../components/about/WhyChooseUs';
+import Testimonials from '../components/about/Testimonials';
 function About() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -15,6 +17,8 @@ function About() {
       <ServicesSection/>
       <StatsSection />
       <TeamSection/>
+      <WhyChooseUs/>
+      <Testimonials/>
       <Footer />
     </div>
   );

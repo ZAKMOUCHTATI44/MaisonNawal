@@ -3,7 +3,8 @@ import logo from "../assets/logo.png"
 
 function Navbar() {
   const redirectToWhatsApp = () => {
-    const phoneNumber = "212600000000"
+   
+    const phoneNumber = "212700700057"
     const message = "Bonjour, je souhaite obtenir des informations sur vos services."
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
