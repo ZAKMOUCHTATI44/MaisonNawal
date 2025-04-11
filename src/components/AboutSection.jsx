@@ -62,10 +62,13 @@ function AboutSection() {
                 <p className="text-gray-600">Soins d'exception pour une mise en beauté parfaite</p>
               </div>
             </div>
-
-            <button className="px-6 py-3 bg-[#f8a4a4] hover:bg-[#f8a4a4]/90 text-white rounded-md transition-colors">
+            <a
+              href="/about"
+              className="px-6 py-2 border border-black text-black font-medium rounded hover:bg-black hover:text-white transition duration-300"
+            >
               À propos
-            </button>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
+            </a>
           </div>
         </div>
       </div>

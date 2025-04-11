@@ -22,9 +22,13 @@ function BeautyIntroSection() {
             Chez <strong>Maison Nawel</strong>, nous croyons que la beauté de luxe peut être accessible à toutes. Nos tarifs sont pensés pour refléter la qualité et l'excellence des services que nous proposons.
             Chaque soin est une invitation à vivre une expérience haut de gamme dans un cadre raffiné, tout en restant à la portée de tous.
           </p>
-          <button className="px-6 py-2 border border-black text-black font-medium rounded hover:bg-black hover:text-white transition duration-300">
-            catalogue.
-          </button>
+          <a
+              href="/catalogue"
+             className="px-6 py-2 border border-black text-black font-medium rounded hover:bg-black hover:text-white transition duration-300"
+            >
+              Catalogue
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
+            </a>
         </div>
       </div>
     </section>
