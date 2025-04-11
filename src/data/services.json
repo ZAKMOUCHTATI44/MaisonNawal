@@ -1,0 +1,580 @@
+{
+    "categories": [
+      {
+        "id": "rituels-hammam",
+        "title": "RITUELS DU HAMMAM",
+        "image": "/imgCatalogue/hamame.png",
+        "services": [
+          {
+            "name": "HAMMAM TRADITIONNEL",
+            "description": "Gommage au savon noir + modelage du corps aux huiles",
+            "price": "250 DHS"
+          },
+          {
+            "name": "HAMMAM ROYAL",
+            "description": "Gommage au savon noir, masque au ghassoul et aux plantes, hydratation à l'huile d'argan parfumée avec 30 minutes de massage relaxant.",
+            "price": "380 DHS"
+          },
+          {
+            "name": "HAMMAM NAWEL SIGNATURE",
+            "description": "Gommage au savon noir, enveloppement au ghassoul, hydratation à l'huile d'argan parfumée, 45 minutes de massage relaxant et modelage visage à la rose et l'argan + masque ghassoul de 15 minutes.",
+            "price": "500 DHS"
+          },
+          {
+            "name": "PACK PRINCESSE (-12 ANS)",
+            "description": "Hammam + Soin visage + Brushing",
+            "price": "500 DHS"
+          },
+          {
+            "name": "PACK DUO",
+            "description": "Hammam + Massage 30 min",
+            "price": "900 DHS"
+          },
+          {
+            "name": "HAMMAM ENFANT",
+            "description": "",
+            "price": "150 DHS"
+          }
+        ]
+      },
+      {
+        "id": "massage",
+        "title": "MASSAGE",
+        "image": "/imgCatalogue/massage.jpg",
+        "services": [
+          {
+            "name": "MASSAGE RELAXANT",
+            "description": "(30min/45min/1h)",
+            "price": "300/450/600 DHS"
+          },
+          {
+            "name": "MASSAGE TONIQUE",
+            "description": "Recommandé pour les corps en manque d'énergie, massage musculaire dynamisant et puissant, décontracte en profondeur.",
+            "price": "680 DHS"
+          },
+          {
+            "name": "MASSAGE AMINCISSANT",
+            "description": "",
+            "price": "650 DHS"
+          },
+          {
+            "name": "MASSAGE AUX 4 MAINS (45MIN)",
+            "description": "",
+            "price": "700 DHS"
+          }
+        ]
+      },
+      {
+        "id": "massage-zones",
+        "title": "MASSAGE PAR ZONES (30MIN)",
+        "image": "/imgCatalogue/massage.jpg",
+        "services": [
+          {
+            "name": "Dos",
+            "description": "",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Jambes",
+            "description": "",
+            "price": "250 DHS"
+          },
+          {
+            "name": "Modelage visage",
+            "description": "",
+            "price": "200 DHS"
+          },
+          {
+            "name": "Drainage lymphatique",
+            "description": "",
+            "price": "800 DHS"
+          }
+        ]
+      },
+      {
+        "id": "epilation",
+        "title": "ÉPILATION",
+        "image": "/imgCatalogue/epilation.png",
+        "services": [
+          {
+            "name": "Sourcils",
+            "description": "",
+            "price": "50 DHS"
+          },
+          {
+            "name": "Lèvres",
+            "description": "",
+            "price": "30 DHS"
+          },
+          {
+            "name": "Visage complet",
+            "description": "(sourcils, lèvres, duvet)",
+            "price": "100 DHS"
+          },
+          {
+            "name": "Aisselles",
+            "description": "",
+            "price": "50 DHS"
+          },
+          {
+            "name": "Avant-bras",
+            "description": "",
+            "price": "80 DHS"
+          },
+          {
+            "name": "Bras complet",
+            "description": "",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Ventre",
+            "description": "",
+            "price": "80 DHS"
+          },
+          {
+            "name": "Demi-jambes",
+            "description": "",
+            "price": "150 DHS"
+          },
+          {
+            "name": "Jambes complètes",
+            "description": "",
+            "price": "160 DHS"
+          },
+          {
+            "name": "Bord du maillot",
+            "description": "",
+            "price": "100 DHS"
+          },
+          {
+            "name": "Maillot brésilien",
+            "description": "",
+            "price": "130 DHS"
+          },
+          {
+            "name": "Maillot intégral",
+            "description": "",
+            "price": "150 DHS"
+          },
+          {
+            "name": "Pack 3 zones au choix",
+            "description": "",
+            "price": "300 DHS"
+          }
+        ]
+      },
+      {
+        "id": "soins-visage",
+        "title": "SOINS DU VISAGE (45MIN)",
+        "image": "/imgCatalogue/soins-du-visage.jpg",
+        "services": [
+          {
+            "name": "HYDRAFACIAL",
+            "description": "Solution innovante et lumineuse. Ce soin révolutionnaire vous permettra d'hydrater, d'exfolier, de nettoyer en profondeur et de lifter votre peau, qui sera douce et plus éclatante.",
+            "price": "1200 DHS"
+          },
+          {
+            "name": "LIFTING CORÉEN",
+            "description": "Notre soin signature, cible les traits marqués, le manque d'éclat et le grain de peau irrégulier. L'Airbrush Ruby-Cell qui diffuse des vitamines, des antioxydants et de l'acide hyaluronique, des céramides, des phyto-polyamides et des cellules souches végétales.",
+            "price": "1200 DHS"
+          },
+          {
+            "name": "PURSKIN",
+            "description": "Équilibre, diminue les imperfections et permet à la peau d'être plus lisse et plus lumineuse, parfaitement adaptée aux peaux grasses.",
+            "price": "400 DHS"
+          },
+          {
+            "name": "SEANSEA",
+            "description": "Nettoie, apaise, calme les irritations et renforce en profondeur la barrière cutanée.",
+            "price": "800 DHS"
+          },
+          {
+            "name": "MAJESTIC",
+            "description": "Effet lifting incomparable grâce à un renouvellement cellulaire en profondeur.",
+            "price": "800 DHS"
+          },
+          {
+            "name": "MODELAGE VISAGE SIMPLE (20MIN)",
+            "description": "Détente assurée avec une crème adaptée à votre type de peau.",
+            "price": "200 DHS"
+          },
+          {
+            "name": "FLOWLESS",
+            "description": "Illumine votre teint en diminuant la synthèse de mélanine et en protégeant votre peau.",
+            "price": "900 DHS"
+          },
+          {
+            "name": "CITADINE",
+            "description": "Répare les dégâts causés par la pollution urbaine, tabac, fatigue... Hydrate intensément votre peau et lui redonne tonus et fraîcheur.",
+            "price": "900 DHS"
+          }
+        ]
+      },
+      {
+        "id": "hydrafacial",
+        "title": "HYDRAFACIAL - TRAITEMENTS COMPLÉMENTAIRES",
+        "image": "/imgCatalogue/hydrafacial.png",
+        "services": [
+          {
+            "name": "Pack 4 séances (Traitement d'attaque)",
+            "description": "",
+            "price": "5500 DHS"
+          },
+          {
+            "name": "Pack de 3 soins Majestic",
+            "description": "",
+            "price": "3800 DHS"
+          },
+          {
+            "name": "Pack de 5 soins Majestic",
+            "description": "",
+            "price": "5500 DHS"
+          },
+          {
+            "name": "Pack de 5 soins Flawless",
+            "description": "",
+            "price": "3800 DHS"
+          }
+        ]
+      },
+      {
+        "id": "shape-elegance",
+        "title": "SHAPE ELEGANCE",
+        "image": "/imgCatalogue/shape-elegance.png",
+        "services": [
+          {
+            "name": "Ventre",
+            "description": "",
+            "price": "700 DHS"
+          },
+          {
+            "name": "Dos",
+            "description": "",
+            "price": "700 DHS"
+          },
+          {
+            "name": "Visage et cou",
+            "description": "",
+            "price": "700 DHS"
+          },
+          {
+            "name": "Jambes",
+            "description": "",
+            "price": "700 DHS"
+          }
+        ]
+      },
+      {
+        "id": "beaute-mains",
+        "title": "BEAUTÉ DES MAINS",
+        "image": "/imgCatalogue/beaute-des-mains.png",
+        "services": [
+          {
+            "name": "Manucure à sec",
+            "description": "",
+            "price": "80 DHS"
+          },
+          {
+            "name": "Manucure spa",
+            "description": "",
+            "price": "120 DHS"
+          },
+          {
+            "name": "Pose vernis simple",
+            "description": "",
+            "price": "50 DHS"
+          },
+          {
+            "name": "Manucure + pose vernis simple",
+            "description": "",
+            "price": "170 DHS"
+          },
+          {
+            "name": "Manucure + pose vernis french",
+            "description": "",
+            "price": "170 DHS"
+          },
+          {
+            "name": "Manucure signature Nawel",
+            "description": "",
+            "price": "200 DHS"
+          }
+        ]
+      },
+      {
+        "id": "semi-permanent",
+        "title": "SEMI-PERMANENT",
+        "image": "/placeholder.svg?height=300&width=400",
+        "services": [
+          {
+            "name": "Pose vernis semi-permanent",
+            "description": "",
+            "price": "250 DHS"
+          },
+          {
+            "name": "Manucure + pose vernis semi-permanent",
+            "description": "",
+            "price": "370 DHS"
+          },
+          {
+            "name": "Dépôt semi-permanent",
+            "description": "",
+            "price": "50 DHS"
+          }
+        ]
+      },
+      {
+        "id": "pedicure",
+        "title": "PÉDICURE",
+        "image": "/placeholder.svg?height=300&width=400",
+        "services": [
+          {
+            "name": "Pédicure",
+            "description": "",
+            "price": "140 DHS"
+          },
+          {
+            "name": "Pédicure + pose vernis simple",
+            "description": "",
+            "price": "190 DHS"
+          },
+          {
+            "name": "Pédicure + pose vernis semi-permanent",
+            "description": "",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Pédicure royale",
+            "description": "",
+            "price": "250 DHS"
+          },
+          {
+            "name": "Pédicure signature Nawel",
+            "description": "",
+            "price": "400 DHS"
+          }
+        ]
+      },
+      {
+        "id": "gel",
+        "title": "GEL",
+        "image": "/placeholder.svg?height=300&width=400",
+        "services": [
+          {
+            "name": "Pose capsule et gel",
+            "description": "",
+            "price": "600 DHS"
+          },
+          {
+            "name": "Remplissage gel",
+            "description": "",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Dépôt et remplissage gel",
+            "description": "",
+            "price": "450 DHS"
+          }
+        ]
+      },
+          
+      {
+        "id": "cheveux",
+        "title": "CÔTÉ CHEVEUX",
+        "image": "/imgCatalogue/coté-cheveux.png",
+        "services": [
+          {
+            "name": "Brushing court",
+            "description": "",
+            "price": "100 DHS"
+          },
+          {
+            "name": "Brushing long",
+            "description": "",
+            "price": "150 DHS"
+          },
+          {
+            "name": "Coupe et brushing court/longs",
+            "description": "",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Soins cheveux",
+            "description": "",
+            "price": "250 DHS"
+          },
+          {
+            "name": "Soins profond",
+            "description": "",
+            "price": "500 DHS"
+          },
+          {
+            "name": "Supplément wavy",
+            "description": "",
+            "price": "50 DHS"
+          },
+          {
+            "name": "Supplément extra lisse",
+            "description": "",
+            "price": "50 DHS"
+          },
+          {
+            "name": "Coloration cheveux courts",
+            "description": "",
+            "price": "400 DHS"
+          },
+          {
+            "name": "Coloration cheveux longs",
+            "description": "",
+            "price": "600 DHS"
+          },
+          {
+            "name": "Sans ammoniaque courts",
+            "description": "",
+            "price": "530 DHS"
+          },
+          {
+            "name": "Sans ammoniaque longs",
+            "description": "",
+            "price": "780 DHS"
+          },
+          {
+            "name": "Balayage",
+            "description": "À partir de",
+            "price": "800 DHS"
+          },
+          {
+            "name": "Patine",
+            "description": "",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Décoloration",
+            "description": "À partir de",
+            "price": "600 DHS"
+          },
+          {
+            "name": "Ombré",
+            "description": "À partir de",
+            "price": "1200 DHS"
+          },
+          {
+            "name": "Sombre",
+            "description": "À partir de",
+            "price": "700 DHS"
+          },
+          {
+            "name": "Lissage",
+            "description": "À partir de",
+            "price": "1000/2500 DHS"
+          },
+          {
+            "name": "Soin botox",
+            "description": "",
+            "price": "1300 DHS"
+          }
+        ]
+      },
+      {
+        "id": "atelier-regard",
+        "title": "L’ATELIER DU REGARD",
+        "image": "/imgCatalogue/atelier-de-regard.jpg",
+        "services": [
+          {
+            "name": "Pose naturel",
+            "price": "600 DHS"
+          },
+          {
+            "name": "Pose star",
+            "price": "700 DHS"
+          },
+          {
+            "name": "Pose volume russe",
+            "price": "1200 DHS"
+          },
+          {
+            "name": "Remplissage naturelle",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Remplissage star",
+            "price": "400 DHS"
+          },
+          {
+            "name": "Remplissage russe",
+            "price": "400 DHS"
+          },
+          {
+            "name": "Rehaussement des cils",
+            "price": "500 DHS"
+          },
+          {
+            "name": "Rehaussement des cils + teinture",
+            "price": "450 DHS"
+          },
+          {
+            "name": "Dépôt cils",
+            "price": "200 DHS"
+          },
+          {
+            "name": "Restructuration sourcils",
+            "price": "300 DHS"
+          },
+          {
+            "name": "Restructuration sourcils + teinture",
+            "price": "400 DHS"
+          },
+          {
+            "name": "Teinture sourcils",
+            "price": "400 DHS"
+          },
+          {
+            "name": "Brow lift",
+            "price": "400 DHS"
+          },
+          {
+            "name": "Brow lift + teinture",
+            "price": "400 DHS"
+          }
+        ]
+      },
+      {
+        "id": "mariage",
+        "title": "PRESTATIONS MARIAGE & ÉVÉNEMENTS",
+        "image": "/imgCatalogue/mariage.png",
+        "services": [
+          { "name": "Essais maquillage", "price": "900 DHS" },
+          { "name": "Essais coiffure", "price": "900 DHS" },
+          { "name": "Maquillage", "price": "2000 DHS" },
+          { "name": "Coiffure", "price": "2000 DHS" },
+          { "name": "Maquillage invitée", "price": "900 DHS" },
+          { "name": "Coiffure invitée", "price": "900 DHS" },
+          { "name": "Maquillage jour", "price": "300 DHS" },
+          { "name": "Maquillage nuit", "price": "600 DHS" }
+        ]
+      },
+      {
+        "id": "techniques-avancees",
+        "title": "TECHNIQUES AVANCÉES",
+        "image": "/imgCatalogue/techniques.png",
+        "services": [
+          { "name": "Glacage lèvres", "price": "2000 DHS" },
+          { "name": "Contour des lèvres", "price": "1200 DHS" },
+          { "name": "Dégradé lèvres", "price": "1600 DHS" },
+          { "name": "Grain de beauté", "price": "300 DHS" },
+          { "name": "Ras des cils", "price": "300 DHS" },
+          { "name": "Microblading", "price": "1300 DHS" },
+          { "name": "Microshading", "price": "1500 DHS" },
+          { "name": "Shadyblading", "description": "Technique mixte", "price": "2500 DHS" },
+          { "name": "Eyeliner", "price": "800 DHS" },
+          { "name": "Mascara permanent", "price": "500 DHS" },
+          { "name": "Tâches de rousseur", "price": "900 DHS" }
+        ]
+      }
+      
+      
+      
+      
+    ]
+  }
+  

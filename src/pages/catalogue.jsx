@@ -1,13 +1,17 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-function Catalogue() {
+import Navbar from "../components/Navbar"
+import CatalogueHero from "../components/catalogue/catalogueHero"
+import CatalogueContent from "../components/catalogue/catalogueContent"
+import Footer from "../components/Footer"
+
+function CataloguePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Navbar />
-     <div> Catalogue de nos services</div>
+      <CatalogueHero />
+      <CatalogueContent />
       <Footer />
     </div>
-  );
+  )
 }
-export default Catalogue;
+
+export default CataloguePage
