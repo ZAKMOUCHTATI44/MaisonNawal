@@ -67,7 +67,7 @@
       {
         "id": "massage-zones",
         "title": "MASSAGE PAR ZONES (30MIN)",
-        "image": "/imgCatalogue/massage.jpg",
+        "image": "/imgCatalogue/massage-par-zone.jpg",
         "services": [
           {
             "name": "Dos",
@@ -304,7 +304,7 @@
       {
         "id": "semi-permanent",
         "title": "SEMI-PERMANENT",
-        "image": "/imgCatalogue/beaute-des-mains.png",
+        "image": "/imgCatalogue/Semi-permanent.jpg",
         "services": [
           {
             "name": "Pose vernis semi-permanent",
@@ -326,7 +326,7 @@
       {
         "id": "pedicure",
         "title": "PÉDICURE",
-        "image": "/imgCatalogue/beaute-des-mains.png",
+        "image": "/imgCatalogue/Pédicure.jpg",
         "services": [
           {
             "name": "Pédicure",
@@ -358,7 +358,7 @@
       {
         "id": "gel",
         "title": "GEL",
-        "image": "/imgCatalogue/coté-cheveux.png",
+        "image": "/imgCatalogue/Gel.jpg",
         "services": [
           {
             "name": "Pose capsule et gel",
