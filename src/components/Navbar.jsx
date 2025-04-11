@@ -26,7 +26,7 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Desktop Menu */}
+   
           <div className="hidden md:flex items-center justify-center space-x-8 flex-1 mx-10">
             <a
               href="/"
@@ -58,7 +58,7 @@ function Navbar() {
             </a>
           </div>
 
-          {/* Desktop Contact Button */}
+       
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={redirectToWhatsApp}
@@ -71,7 +71,6 @@ function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button 
               onClick={toggleMenu}
@@ -92,7 +91,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-pink-100 shadow-lg z-20">
           <div className="px-2 pt-2 pb-4 space-y-1">
