@@ -304,7 +304,7 @@
       {
         "id": "semi-permanent",
         "title": "SEMI-PERMANENT",
-        "image": "/placeholder.svg?height=300&width=400",
+        "image": "/imgCatalogue/beaute-des-mains.png",
         "services": [
           {
             "name": "Pose vernis semi-permanent",
@@ -326,7 +326,7 @@
       {
         "id": "pedicure",
         "title": "PÉDICURE",
-        "image": "/placeholder.svg?height=300&width=400",
+        "image": "/imgCatalogue/beaute-des-mains.png",
         "services": [
           {
             "name": "Pédicure",
@@ -358,7 +358,7 @@
       {
         "id": "gel",
         "title": "GEL",
-        "image": "/placeholder.svg?height=300&width=400",
+        "image": "/imgCatalogue/coté-cheveux.png",
         "services": [
           {
             "name": "Pose capsule et gel",
@@ -541,7 +541,7 @@
       {
         "id": "mariage",
         "title": "PRESTATIONS MARIAGE & ÉVÉNEMENTS",
-        "image": "/imgCatalogue/mariage.png",
+        "image": "/imgCatalogue/adomicile.png",
         "services": [
           { "name": "Essais maquillage", "price": "900 DHS" },
           { "name": "Essais coiffure", "price": "900 DHS" },
@@ -556,7 +556,7 @@
       {
         "id": "techniques-avancees",
         "title": "TECHNIQUES AVANCÉES",
-        "image": "/imgCatalogue/techniques.png",
+        "image": "/imgCatalogue/epilation-laser.png",
         "services": [
           { "name": "Glacage lèvres", "price": "2000 DHS" },
           { "name": "Contour des lèvres", "price": "1200 DHS" },
