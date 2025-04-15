@@ -83,7 +83,7 @@ function Hero() {
      
           <a
               href="/catalogue"
-              className="bg-[#d4a373] hover:bg-[#c29365] text-white px-8 py-3 uppercase font-medium transition-all duration-300 transform hover:scale-105"
+              className="bg-pink-100 hover:bg-[#c29365] text-black px-8 py-3 uppercase font-medium transition-all duration-300 transform hover:scale-105 rounded-lg"
             >
               Découvrir nos collections
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>

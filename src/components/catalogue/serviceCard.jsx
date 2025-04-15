@@ -1,9 +1,15 @@
-
 import { useState } from "react"
 import { X } from "lucide-react"
 
-export default function ServiceCard({  title, image, services }) {
+export default function ServiceCard({ title, image, services }) {
   const [isOpen, setIsOpen] = useState(false)
+
+  const redirectToWhatsApp = () => {
+    const phoneNumber = "212700700057"
+    const message = `Bonjour, je suis intéressé(e) par le service : ${title}`
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, "_blank")
+  }
 
   return (
     <>
@@ -18,7 +24,6 @@ export default function ServiceCard({  title, image, services }) {
         </div>
       </div>
 
-   
       {isOpen && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto relative">
@@ -42,6 +47,15 @@ export default function ServiceCard({  title, image, services }) {
                     {service.description && <p className="text-gray-600 text-sm mt-1">{service.description}</p>}
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-8 text-center">
+                <button
+                  onClick={redirectToWhatsApp}
+                  className="bg-[#f8a4a4] hover:bg-[#c38e5e] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                >
+                  Réserver sur WhatsApp
+                </button>
               </div>
             </div>
           </div>
