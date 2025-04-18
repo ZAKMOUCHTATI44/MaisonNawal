@@ -35,8 +35,7 @@ export default function ServiceCard({ title, image, services }) {
                 {services.map((service, index) => (
                   <div
                     key={index}
-                    onClick={() => redirectToWhatsApp(`Vous avez choisi : "${service.name}"] 💎
-Un soin pensé pour vous offrir une expérience d’exception. Complétez votre réservation et laissez Maison Nawel sublimer votre beauté.  et j'aimerais avoir plus de détails. Quand pourriez-vous me recevoir ?`)}
+                    onClick={() => redirectToWhatsApp(`Vous avez choisi : "${service.name}"] 💎 Un soin pensé pour vous offrir une expérience d’exception. Complétez votre réservation et laissez Maison Nawel sublimer votre beauté.`)}
                     className="border-b border-gray-100 pb-4 last:border-0 cursor-pointer hover:bg-gray-50 transition"
                   >
                     <div className="flex justify-between items-start">
@@ -50,8 +49,7 @@ Un soin pensé pour vous offrir une expérience d’exception. Complétez votre 
 
               <div className="mt-8 text-center">
                 <button
-                 onClick={() => redirectToWhatsApp(`Merci de votre confiance ! 💖 Vous êtes à deux clics d’un moment de bien-être unique chez Maison Nawel. 
-Sélectionnez votre prestation, choisissez votre créneau, dans service "${title}". et laissez-nous sublimer votre beauté.`)}
+                 onClick={() => redirectToWhatsApp(`Merci de votre confiance ! 💖 Vous êtes à deux clics d’un moment de bien-être unique chez Maison Nawel. Sélectionnez votre prestation, choisissez votre créneau, dans service "${title}". et laissez-nous sublimer votre beauté.`)}
                   className="bg-[#f8a4a4] hover:bg-[#c38e5e] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                 >
                   Réserver sur WhatsApp
