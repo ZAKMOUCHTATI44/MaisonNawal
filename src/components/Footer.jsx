@@ -17,7 +17,7 @@ function Footer() {
         
           <div className="flex gap-4 justify-center md:justify-start mt-4">
   <a
-    href="https://www.facebook.com/"
+    href="https://www.facebook.com/maisonnawel"
     target="_blank"
     rel="noopener noreferrer"
     className="w-10 h-10 border border-white rounded-full flex items-center justify-center text-xl hover:bg-white hover:text-pink-500 transition"

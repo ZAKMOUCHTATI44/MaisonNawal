@@ -1,15 +1,9 @@
-import { useState } from "react"
-import { X } from "lucide-react"
+import { useState } from "react";
+import { X } from "lucide-react";
+import { redirectToWhatsApp } from "../../utils/whatsapp"; 
 
 export default function ServiceCard({ title, image, services }) {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const redirectToWhatsApp = () => {
-    const phoneNumber = "212700700057"
-    const message = `Bonjour, je suis intéressé(e) par le service : ${title}`
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, "_blank")
-  }
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -39,7 +33,11 @@ export default function ServiceCard({ title, image, services }) {
 
               <div className="space-y-6">
                 {services.map((service, index) => (
-                  <div key={index} className="border-b border-gray-100 pb-4 last:border-0">
+                  <div
+                    key={index}
+                    onClick={() => redirectToWhatsApp(`Je suis intéressé par le service: ${service.name}`)}
+                    className="border-b border-gray-100 pb-4 last:border-0 cursor-pointer hover:bg-gray-50 transition"
+                  >
                     <div className="flex justify-between items-start">
                       <h3 className="font-medium text-gray-800">{service.name}</h3>
                       {service.price && <span className="font-medium text-[#f8a4a4]">{service.price}</span>}
@@ -51,7 +49,7 @@ export default function ServiceCard({ title, image, services }) {
 
               <div className="mt-8 text-center">
                 <button
-                  onClick={redirectToWhatsApp}
+                  onClick={() => redirectToWhatsApp(`Je souhaite réserver un service de type ${title}`)}
                   className="bg-[#f8a4a4] hover:bg-[#c38e5e] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                 >
                   Réserver sur WhatsApp
@@ -62,5 +60,5 @@ export default function ServiceCard({ title, image, services }) {
         </div>
       )}
     </>
-  )
+  );
 }

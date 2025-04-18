@@ -1,32 +1,28 @@
-import logo from "../assets/logo.png"
-import { useState } from "react"
+import { useState } from "react";
+import { redirectToWhatsApp } from "../utils/whatsapp"; 
+import logo from "../assets/logo.png";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const redirectToWhatsApp = () => {
-    const phoneNumber = "212700700057"
-    const message = "Bonjour, je souhaite obtenir des informations sur vos services."
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, "_blank")
-  }
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className="bg-pink-100 py-4 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          
           <div className="flex-shrink-0">
             <div className="flex items-center">
-            <img src={logo || "/placeholder.svg"} alt="Maison Nawal Logo" className="h-12 w-auto" />
+              <img
+                src={logo || "/placeholder.svg"}
+                alt="Maison Nawal Logo"
+                className="h-12 w-auto"
+              />
             </div>
           </div>
 
-   
           <div className="hidden md:flex items-center justify-center space-x-8 flex-1 mx-10">
             <a
               href="/"
@@ -58,10 +54,9 @@ function Navbar() {
             </a>
           </div>
 
-       
           <div className="hidden md:flex items-center space-x-4">
             <button
-              onClick={redirectToWhatsApp}
+              onClick={() => redirectToWhatsApp("Bonjour, je souhaite obtenir des informations sur vos services.")}
               className="border border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 px-6 py-2 flex items-center transition-colors duration-300 uppercase text-sm font-medium"
             >
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -90,7 +85,6 @@ function Navbar() {
           </div>
         </div>
       </div>
-
 
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-pink-100 shadow-lg z-20">
@@ -121,7 +115,7 @@ function Navbar() {
             </a>
             <div className="px-3 py-3">
               <button
-                onClick={redirectToWhatsApp}
+                onClick={() => redirectToWhatsApp("Bonjour, je souhaite obtenir des informations sur vos services.")}
                 className="w-full border border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 px-4 py-2 flex items-center justify-center transition-colors duration-300 uppercase text-sm font-medium"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -134,7 +128,7 @@ function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
