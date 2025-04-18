@@ -80,6 +80,7 @@ function Hero() {
             </div>
           ))}
           
+          
      
           <a
               href="/catalogue"

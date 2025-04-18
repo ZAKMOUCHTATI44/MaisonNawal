@@ -13,7 +13,7 @@ function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
 
-          {/* Service 1 */}
+   
           <a
             href="/catalogue"
             className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
@@ -33,7 +33,7 @@ function ServicesSection() {
             </p>
           </a>
 
-          {/* Service 2 */}
+       
           <a
             href="/catalogue"
             className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
@@ -53,7 +53,7 @@ function ServicesSection() {
             </p>
           </a>
 
-          {/* Service 3 */}
+       
           <a
             href="/catalogue"
             className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
@@ -73,7 +73,7 @@ function ServicesSection() {
             </p>
           </a>
 
-          {/* Service 4 */}
+       
           <a
             href="/catalogue"
             className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
