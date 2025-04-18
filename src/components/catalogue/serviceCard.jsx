@@ -35,7 +35,7 @@ export default function ServiceCard({ title, image, services }) {
                 {services.map((service, index) => (
                   <div
                     key={index}
-                    onClick={() => redirectToWhatsApp(`Je suis intéressé par le service: ${service.name}`)}
+                    onClick={() => redirectToWhatsApp(`Bonjour, je suis intéressé(e) par votre service "${service.name}" et j'aimerais avoir plus de détails. Quand pourriez-vous me recevoir ?`)}
                     className="border-b border-gray-100 pb-4 last:border-0 cursor-pointer hover:bg-gray-50 transition"
                   >
                     <div className="flex justify-between items-start">
@@ -49,7 +49,7 @@ export default function ServiceCard({ title, image, services }) {
 
               <div className="mt-8 text-center">
                 <button
-                  onClick={() => redirectToWhatsApp(`Je souhaite réserver un service de type ${title}`)}
+                 onClick={() => redirectToWhatsApp(`Bonjour, je souhaite réserver votre service "${title}". Pouvez-vous me donner plus d'informations sur les disponibilités ?`)}
                   className="bg-[#f8a4a4] hover:bg-[#c38e5e] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                 >
                   Réserver sur WhatsApp
