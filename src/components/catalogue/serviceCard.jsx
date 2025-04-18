@@ -35,7 +35,7 @@ export default function ServiceCard({ title, image, services }) {
                 {services.map((service, index) => (
                   <div
                     key={index}
-                    onClick={() => redirectToWhatsApp(`Vous avez choisi : "${service.name}"] 💎 Un soin pensé pour vous offrir une expérience d’exception. Complétez votre réservation et laissez Maison Nawel sublimer votre beauté.`)}
+                    onClick={() => redirectToWhatsApp(`Vous avez choisi : "${service.name}" 💎 Un soin pensé pour vous offrir une expérience d’exception. Complétez votre réservation et laissez Maison Nawel sublimer votre beauté.`)}
                     className="border-b border-gray-100 pb-4 last:border-0 cursor-pointer hover:bg-gray-50 transition"
                   >
                     <div className="flex justify-between items-start">
