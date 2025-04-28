@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: 'Arquitecta';
+    src: url('/fonts/arquitecta/ArquitectaThin.woff2') format('woff2'),
+         url('/fonts/arquitecta/ArquitectaThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Arquitecta';
+    src: url('/fonts/arquitecta/ArquitectaMedium.woff2') format('woff2'),
+         url('/fonts/arquitecta/ArquitectaMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+  

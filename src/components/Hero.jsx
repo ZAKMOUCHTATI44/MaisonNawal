@@ -72,11 +72,12 @@ function Hero() {
                 {slide.title}
               </h1>
               
-              <p className={`text-lg md:text-xl text-white mb-8 transition-all duration-700 delay-200 transform ${
-                currentImage === index ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-              }`}>
-                {slide.paragraph}
-              </p>
+              <p className={`text-xl md:text-2xl text-white mb-8 transition-all duration-700 delay-200 transform ${
+  currentImage === index ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+}`}>
+  {slide.paragraph}
+</p>
+
             </div>
           ))}
           
@@ -84,7 +85,7 @@ function Hero() {
      
           <a
               href="/catalogue"
-              className="bg-pink-100 hover:bg-[#c29365] text-black px-8 py-3 uppercase font-medium transition-all duration-300 transform hover:scale-105 rounded-lg"
+              className="bg-[#F8C8D5] hover:bg-[#c29365] text-black px-8 py-3 uppercase font-medium transition-all duration-300 transform hover:scale-105 rounded-lg"
             >
               Découvrir nos collections
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>

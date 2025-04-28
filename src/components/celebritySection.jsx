@@ -9,7 +9,7 @@ function CelebritySection() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-[#d4a373] uppercase tracking-wider font-medium">EXPLOREZ NOS PRESTATIONS</span>
+            <span className="text-[#F8C8D5] uppercase tracking-wider font-medium">EXPLOREZ NOS PRESTATIONS</span>
             <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-serif text-gray-800">
               Les célébrités qui nous ont fait confiance
             </h2>

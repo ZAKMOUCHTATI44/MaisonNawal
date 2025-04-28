@@ -16,7 +16,7 @@ function ServicesSection() {
    
           <a
             href="/catalogue"
-            className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
+            className="flex flex-col items-center group hover:text-[#F8C8D5] transition-all duration-300"
           >
             <div className="w-64 h-64 overflow-hidden mb-6 shadow-lg custom-mask">
               <img
@@ -25,7 +25,7 @@ function ServicesSection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#d4a373] transition-all duration-300">
+            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#F8C8D5] transition-all duration-300">
               Coiffure & Soins Capillaires
             </h3>
             <p className="text-gray-500 text-center text-sm max-w-xs">
@@ -36,7 +36,7 @@ function ServicesSection() {
        
           <a
             href="/catalogue"
-            className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
+            className="flex flex-col items-center group hover:text-[#F8C8D5] transition-all duration-300"
           >
             <div className="w-64 h-64 overflow-hidden mb-6 shadow-lg custom-mask">
               <img
@@ -45,7 +45,7 @@ function ServicesSection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#d4a373] transition-all duration-300">
+            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#F8C8D5] transition-all duration-300">
               Massages & Soins du Corps
             </h3>
             <p className="text-gray-500 text-center text-sm max-w-xs">
@@ -56,7 +56,7 @@ function ServicesSection() {
        
           <a
             href="/catalogue"
-            className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
+            className="flex flex-col items-center group hover:text-[#F8C8D5] transition-all duration-300"
           >
             <div className="w-64 h-64 overflow-hidden mb-6 shadow-lg custom-mask">
               <img
@@ -65,7 +65,7 @@ function ServicesSection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#d4a373] transition-all duration-300">
+            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#F8C8D5] transition-all duration-300">
               Cils & Sourcils
             </h3>
             <p className="text-gray-500 text-center text-sm max-w-xs">
@@ -76,7 +76,7 @@ function ServicesSection() {
        
           <a
             href="/catalogue"
-            className="flex flex-col items-center group hover:text-[#d4a373] transition-all duration-300"
+            className="flex flex-col items-center group hover:text-[#F8C8D5] transition-all duration-300"
           >
             <div className="w-64 h-64 overflow-hidden mb-6 shadow-lg custom-mask">
               <img
@@ -85,7 +85,7 @@ function ServicesSection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#d4a373] transition-all duration-300">
+            <h3 className="text-xl font-serif text-gray-800 mb-2 text-center group-hover:text-[#F8C8D5] transition-all duration-300">
               Épilation & Beauté du Regard
             </h3>
             <p className="text-gray-500 text-center text-sm max-w-xs">

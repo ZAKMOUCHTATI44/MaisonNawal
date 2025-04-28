@@ -1,0 +1,25 @@
+[
+    {
+      "id": "blog-01",
+      "image": "/imgCatalogue/epilation.png",
+      "date": "12",
+      "month": "Avril",
+      "categories": ["Coiffure", "Marrakech", "Bien-être"],
+      "title": "Maison Nawel : Le salon de beauté incontournable à Marrakech",
+      "excerpt": "Découvrez Maison Nawel, le salon de beauté qui redéfinit l'art du soin et du bien-être à Marrakech.",
+      "content": "Au cœur de la vibrante ville de Marrakech, Maison Nawel s’impose comme le salon de beauté haut de gamme qui redéfinit l’art du soin et du bien-être. Pensé comme un cocon de raffinement, ce lieu unique conjugue excellence, innovation et tradition marocaine dans une atmosphère chaleureuse et intimiste. Maison Nawel est bien plus qu’un institut de beauté : c’est le reflet d’un couple uni par la passion de sublimer les autres, avec élégance et authenticité.",
+      "slug": "blog-01"
+    },
+    {
+      "id": "blog-02",
+      "image": "/imgCatalogue/epilation.png",
+      "date": "18",
+      "month": "Avril",
+      "categories": ["Rituel de beauté", "Relaxation", "Marrakech"],
+      "title": "Votre rituel bien-être dans un salon de beauté pas comme les autres",
+      "excerpt": "Maison Nawel vous invite à vivre un rituel de beauté unique, où chaque soin est une expérience.",
+      "content": "Dans une ville aussi vivante que Marrakech, il existe un lieu discret, élégant et lumineux, où l’on vient pour ralentir, respirer, se retrouver. Ce lieu, c’est Maison Nawel, une maison de beauté qui ne ressemble à aucune autre. Ici, on ne se contente pas d’embellir. On soigne, on écoute, on apaise. Maison Nawel n’est pas un simple salon de beauté. C’est un refuge. Un lieu où l’on vient avec le désir d’aller mieux.",
+      "slug": "blog-02"
+    }
+  ]
+  

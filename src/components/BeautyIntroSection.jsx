@@ -7,7 +7,7 @@ function BeautyIntroSection() {
     <section className="bg-white py-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12">
        
-        <div className="relative w-[320px] h-[320px] bg-pink-100 rounded-br-[120px] flex items-center justify-center shadow-md">
+        <div className="relative w-[320px] h-[320px] bg-[#F8C8D5] rounded-br-[120px] flex items-center justify-center shadow-md">
           <img
             src={imageBeauty}
             alt="Salon de beauté"

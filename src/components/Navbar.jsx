@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { redirectToWhatsApp } from "../utils/whatsapp"; 
-import logo from "../assets/logo.png";
+import logo from "../assets/logoo.png";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-pink-100 py-4 relative">
+    <nav className="bg-[#F8C8D5] py-4 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
@@ -46,6 +46,13 @@ function Navbar() {
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
             </a>
             <a
+              href="/blog"
+              className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase relative group"
+            >
+              Blog
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#d4a373] group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a
               href="/contact"
               className="text-gray-800 hover:text-[#d4a373] px-3 py-2 text-sm font-medium uppercase relative group"
             >
@@ -56,7 +63,7 @@ function Navbar() {
 
           <div className="hidden md:flex items-center space-x-4">
             <button
-              onClick={() => redirectToWhatsApp("Bonjour, je souhaite obtenir des informations sur vos services.")}
+              onClick={() => redirectToWhatsApp("Bonjour 🌸 Je suis intéressé(e) par vos prestations et j’aimerais en savoir davantage. Pourriez-vous me partager plus d’informations, s’il vous plaît ?")}
               className="border border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 px-6 py-2 flex items-center transition-colors duration-300 uppercase text-sm font-medium"
             >
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -87,7 +94,7 @@ function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-pink-100 shadow-lg z-20">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-[#F8C8D5] shadow-lg z-20">
           <div className="px-2 pt-2 pb-4 space-y-1">
             <a
               href="/"

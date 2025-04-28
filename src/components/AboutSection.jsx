@@ -39,7 +39,7 @@ function AboutSection() {
   
           <div className="space-y-8">
             <div>
-              <span className="inline-block px-4 py-1 bg-[#fce1e4] text-[#d4a373] rounded-full text-sm font-medium">
+              <span className="inline-block px-4 py-1 bg-[#F8C8D5] text-[#000000] rounded-full text-sm font-medium">
                 MAISON DE BEAUTÉ
               </span>
               <h2 className="text-3xl md:text-4xl font-serif text-gray-800 mt-4">Bienvenue chez Maison Nawel</h2>
@@ -54,11 +54,11 @@ function AboutSection() {
 
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <p className="text-3xl font-bold text-[#d4a373]">+12</p>
+                <p className="text-3xl font-bold text-[#F8C8D5]">+12</p>
                 <p className="text-gray-600">Experts en beauté et bien-être</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-[#d4a373]">+20</p>
+                <p className="text-3xl font-bold text-[#F8C8D5]">+20</p>
                 <p className="text-gray-600">Soins d'exception pour une mise en beauté parfaite</p>
               </div>
             </div>
