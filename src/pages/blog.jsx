@@ -11,43 +11,42 @@ import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 function Blog() {
   const [blogs, setBlogs] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
-  const [blogsPerPage] = useState(6) // Nombre d'articles par page
+  const [blogsPerPage] = useState(6) 
 
   useEffect(() => {
     setBlogs(blogsData)
   }, [])
 
-  // Logique de pagination
+
   const indexOfLastBlog = currentPage * blogsPerPage
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage
   const currentBlogs = blogs.slice(indexOfFirstBlog, indexOfLastBlog)
   const totalPages = Math.ceil(blogs.length / blogsPerPage)
 
-  // Changer de page
+ 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber)
-    // Scroll vers le haut de la page quand on change de page
+    
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
-  // Aller à la page précédente
+ 
   const goToPreviousPage = () => {
     if (currentPage > 1) {
       paginate(currentPage - 1)
     }
   }
 
-  // Aller à la page suivante
+
   const goToNextPage = () => {
     if (currentPage < totalPages) {
       paginate(currentPage + 1)
     }
   }
 
-  // Générer les numéros de page à afficher
   const getPageNumbers = () => {
     const pageNumbers = []
-    const maxPagesToShow = 5 // Nombre maximum de pages à afficher
+    const maxPagesToShow = 5
 
     let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2))
     let endPage = startPage + maxPagesToShow - 1
@@ -70,12 +69,12 @@ function Blog() {
       <BlogHero />
 
       <div className="container mx-auto p-6">
-        {/* Affichage du nombre total d'articles */}
+      
         <div className="mb-6 text-gray-600">
           Affichage de {indexOfFirstBlog + 1}-{Math.min(indexOfLastBlog, blogs.length)} sur {blogs.length} articles
         </div>
 
-        {/* Grille d'articles */}
+     
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
           {currentBlogs.map((blog) => (
             <BlogCard
@@ -91,11 +90,10 @@ function Blog() {
           ))}
         </div>
 
-        {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center my-8">
             <nav className="flex items-center space-x-1" aria-label="Pagination">
-              {/* Bouton précédent */}
+              
               <button
                 onClick={goToPreviousPage}
                 disabled={currentPage === 1}
@@ -109,7 +107,7 @@ function Blog() {
                 <span className="sr-only">Précédent</span>
               </button>
 
-              {/* Première page et ellipsis si nécessaire */}
+            
               {getPageNumbers()[0] > 1 && (
                 <>
                   <button
@@ -126,7 +124,7 @@ function Blog() {
                 </>
               )}
 
-              {/* Numéros de page */}
+           
               {getPageNumbers().map((number) => (
                 <button
                   key={number}
@@ -141,7 +139,7 @@ function Blog() {
                 </button>
               ))}
 
-              {/* Dernière page et ellipsis si nécessaire */}
+         
               {getPageNumbers()[getPageNumbers().length - 1] < totalPages && (
                 <>
                   {getPageNumbers()[getPageNumbers().length - 1] < totalPages - 1 && (
@@ -158,7 +156,7 @@ function Blog() {
                 </>
               )}
 
-              {/* Bouton suivant */}
+        
               <button
                 onClick={goToNextPage}
                 disabled={currentPage === totalPages}
@@ -175,7 +173,7 @@ function Blog() {
           </div>
         )}
 
-        {/* Message si aucun article */}
+  
         {blogs.length === 0 && (
           <div className="text-center py-12">
             <h3 className="text-xl font-medium text-gray-700">Aucun article disponible pour le moment</h3>
