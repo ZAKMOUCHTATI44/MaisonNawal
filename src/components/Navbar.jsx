@@ -115,6 +115,12 @@ function Navbar() {
               Catalogue
             </a>
             <a
+              href="/blog"
+              className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-pink-200 rounded-md"
+            >
+              Blog
+            </a>
+            <a
               href="/contact"
               className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-pink-200 rounded-md"
             >
