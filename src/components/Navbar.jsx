@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { redirectToWhatsApp } from "../utils/whatsapp"; 
-import logo from "../assets/logoo.png";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
