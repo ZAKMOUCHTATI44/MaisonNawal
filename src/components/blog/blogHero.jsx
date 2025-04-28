@@ -8,7 +8,7 @@ function BlogHero() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl md:text-5xl font-serif text-white mb-2">blog</h1>
+          <h1 className="text-4xl md:text-5xl font-serif text-white mb-2">BLOG</h1>
           <div className="text-white text-sm md:text-base">
             <span>Home</span> <span className="mx-2">/</span> <span>blog</span>
           </div>

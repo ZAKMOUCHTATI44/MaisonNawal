@@ -1,15 +1,39 @@
-"use client"
 import { useParams } from "react-router-dom"
 import blogsData from "../data/blogs.json"
 import Navbar from "../components/Navbar"
 import BlogHero from "../components/blog/blogHero"
 import Footer from "../components/Footer"
 import { CalendarIcon, ClockIcon, TagIcon, ChevronLeftIcon } from "lucide-react"
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { useEffect } from "react"
+
+
+function generateSlug(title) {
+    return title
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+  }
+
+  
 
 function BlogDetail() {
   const { slug } = useParams()
-  const blog = blogsData.find((b) => b.slug === slug)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [slug])
+
+  const blogsWithSlugs = blogsData.map((blog) => ({
+    ...blog,
+    slug: generateSlug(blog.title),
+  }))
+
+  const blog = blogsWithSlugs.find((b) => b.slug === slug)
 
   if (!blog) {
     return (
@@ -25,8 +49,8 @@ function BlogDetail() {
     )
   }
 
- 
-  const relatedBlogs = blogsData
+
+  const relatedBlogs = blogsWithSlugs
     .filter((b) => b.slug !== slug && b.categories.some((cat) => blog.categories.includes(cat)))
     .slice(0, 3)
 
@@ -34,9 +58,9 @@ function BlogDetail() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <BlogHero />
-
+      
       <main className="container mx-auto px-4 py-8 max-w-5xl">
-       
+        
         <Link to="/blog" className="inline-flex items-center text-rose-600 hover:text-rose-700 mb-8 transition-colors">
           <ChevronLeftIcon className="w-4 h-4 mr-2" />
           Retour aux articles

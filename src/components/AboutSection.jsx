@@ -1,5 +1,6 @@
-import img1 from "../assets/aboutSection/abouSec1.png"
-import img2 from "../assets/aboutSection/abouSec2.jpeg"
+
+import img3 from "../assets/aboutSection/abouSec3.webp";
+import img4 from "../assets/aboutSection/abouSec4.jpg";
 
 function AboutSection() {
   return (
@@ -9,7 +10,7 @@ function AboutSection() {
       
           <div className="space-y-8">
             <div>
-              <span className="text-[#d4a373] uppercase font-medium">À PROPOS</span>
+              <span className="text-[#F8C8D5] uppercase font-medium">À PROPOS</span>
               <h2 className="text-3xl md:text-4xl font-serif text-gray-800 mt-2">Bienvenue chez Maison Nawel</h2>
             </div>
 
@@ -21,7 +22,7 @@ function AboutSection() {
                   clipPath: "polygon(0% 0%, 100% 0%, 85% 85%, 0% 100%)",
                 }}
               >
-                <img src={img1 || "/placeholder.svg"} alt="Manicure session" className="w-full h-full object-cover" />
+                <img src={img3|| "/placeholder.svg"} alt="Manicure session" className="w-full h-full object-cover" />
               </div>
 
           
@@ -31,7 +32,7 @@ function AboutSection() {
                   clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 85%)",
                 }}
               >
-                <img src={img2 || "/placeholder.svg"} alt="Colorful manicure" className="w-full h-full object-cover" />
+                <img src={img4 || "/placeholder.svg"} alt="Colorful manicure" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
