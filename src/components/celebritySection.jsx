@@ -7,55 +7,55 @@ import img2 from "../assets/celebrity/celeb2.png"
 import img3 from "../assets/celebrity/celeb3.png"
 import img4 from "../assets/celebrity/celeb4.png"
 import img5 from "../assets/celebrity/celeb5.png"
-
+import img6 from "../assets/celebrity/celeb6.jpg"
+import img7 from "../assets/celebrity/celeb7.jpg"
+import img8 from "../assets/celebrity/celeb8.jpg"
+import img9 from "../assets/celebrity/celeb9.jpg"
+import img10 from "../assets/celebrity/celeb10.jpg"
+import img11 from "../assets/celebrity/celeb11.jpg"
+import img12 from "../assets/celebrity/celeb12.jpg"
+import img13 from "../assets/celebrity/celeb13.jpg"
+import img14 from "../assets/celebrity/celeb14.jpg"
+import img15 from "../assets/celebrity/celeb15.jpg"
+import img16 from "../assets/celebrity/celeb16.jpg"
 
 register()
 
 const celebrities = [
-  {
-    name: "Célébrité 1",
-    image: img1,
-    role: "Influenceuse & Créatrice de contenu",
-  },
-  {
-    name: "Célébrité 2",
-    image: img2,
-    role: "Actrice & Ambassadrice",
-  },
-  {
-    name: "Célébrité 3",
-    image: img3,
-    role: "Chanteuse & Personnalité TV",
-  },
-  {
-    name: "Célébrité 4",
-    image: img4,
-    role: "Mannequin & Influenceuse",
-  },
-  {
-    name: "Célébrité 5",
-    image: img5,
-    role: "Actrice & Créatrice de contenu",
-  },
+  { image: img1 },
+  { image: img2 },
+  { image: img3 },
+  { image: img4 },
+  { image: img5 },
+  { image: img6 },
+  { image: img7 },
+  { image: img8 },
+  { image: img9 },
+  { image: img10 },
+  { image: img11 },
+  { image: img12 },
+  { image: img13 },
+  { image: img14 },
+  { image: img15 },
+  { image: img16 },
 ]
 
 function CelebritySection() {
   const swiperRef = useRef(null)
 
   useEffect(() => {
-  
     const swiperContainer = swiperRef.current
 
     const params = {
       effect: "coverflow",
       grabCursor: true,
-      loopAdditionalSlides: 5, 
+      loopAdditionalSlides: 5,
       centeredSlides: true,
       slidesPerView: "auto",
       initialSlide: 2,
       freeMode: true,
       freeModeMomentum: false,
-      loop: true, 
+      loop: true,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
@@ -66,22 +66,19 @@ function CelebritySection() {
         stretch: 0,
         depth: 100,
         modifier: 2.5,
-        slideShadows: true,
+        slideShadows: false, 
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
     }
-    
 
-  
     Object.assign(swiperContainer, params)
-
     swiperContainer.initialize()
   }, [])
 
@@ -96,34 +93,27 @@ function CelebritySection() {
           <p className="text-[#000000] mt-4 max-w-2xl mx-auto">
           Découvrez les personnalités qui ont choisi Maison Nawel pour leurs soins de beauté
           </p>
-
         </div>
 
         <div className="relative py-10">
           <swiper-container ref={swiperRef} init="false" class="w-full h-[500px]">
             {celebrities.map((celebrity, index) => (
               <swiper-slide key={index} style={{ width: "300px", height: "400px" }}>
-                <div className="relative h-full rounded-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105">
+                <div className="relative h-full rounded-lg overflow-hidden group">
                   <img
                     src={celebrity.image || "/placeholder.svg?height=400&width=300"}
-                    alt={celebrity.name}
+                    alt={`Célébrité ${index + 1}`}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
-                    <h3 className="text-white text-xl font-medium">{celebrity.name}</h3>
-                    <p className="text-gray-300 text-sm">{celebrity.role}</p>
-                  </div>
                 </div>
               </swiper-slide>
             ))}
           </swiper-container>
 
-        
           <div className="swiper-button-prev !text-white !opacity-70 hover:!opacity-100 transition-opacity"></div>
           <div className="swiper-button-next !text-white !opacity-70 hover:!opacity-100 transition-opacity"></div>
 
-         
-          <div className="swiper-pagination !bottom-0 !text-white"></div>
+          {/* <div className="swiper-pagination !bottom-0 !text-white"></div> */}
         </div>
       </div>
     </section>

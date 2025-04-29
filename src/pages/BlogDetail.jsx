@@ -1,25 +1,24 @@
+"use client"
+
 import { useParams } from "react-router-dom"
 import blogsData from "../data/blogs.json"
 import Navbar from "../components/Navbar"
 import BlogHero from "../components/blog/blogHero"
 import Footer from "../components/Footer"
 import { CalendarIcon, ClockIcon, TagIcon, ChevronLeftIcon } from "lucide-react"
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import { useEffect } from "react"
 
-
 function generateSlug(title) {
-    return title
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9\s-]/g, '')
-      .trim()
-      .replace(/\s+/g, '-')
-      .replace(/-+/g, '-')
-  }
-
-  
+  return title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+}
 
 function BlogDetail() {
   const { slug } = useParams()
@@ -49,7 +48,6 @@ function BlogDetail() {
     )
   }
 
-
   const relatedBlogs = blogsWithSlugs
     .filter((b) => b.slug !== slug && b.categories.some((cat) => blog.categories.includes(cat)))
     .slice(0, 3)
@@ -58,15 +56,13 @@ function BlogDetail() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <BlogHero />
-      
+
       <main className="container mx-auto px-4 py-8 max-w-5xl">
-        
         <Link to="/blog" className="inline-flex items-center text-rose-600 hover:text-rose-700 mb-8 transition-colors">
           <ChevronLeftIcon className="w-4 h-4 mr-2" />
           Retour aux articles
         </Link>
 
-      
         <div className="mb-8">
           <div className="flex flex-wrap gap-2 mb-4">
             {blog.categories?.map((category, index) => (
@@ -92,7 +88,6 @@ function BlogDetail() {
           </div>
         </div>
 
-     
         <div className="mb-10 rounded-xl overflow-hidden shadow-lg">
           <img
             src={blog.image || "/placeholder.svg"}
@@ -101,16 +96,18 @@ function BlogDetail() {
           />
         </div>
 
-  
-        <div className="prose prose-lg max-w-none mb-12">
+        <div className="prose prose-lg max-w-none mb-12 space-y-4">
           {typeof blog.content === "string" ? (
-            <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+            blog.content.split("\n\n").map((paragraph, index) => (
+              <p key={index} className="mb-4">
+                {paragraph}
+              </p>
+            ))
           ) : (
             <div>{blog.content}</div>
           )}
         </div>
 
-      
         <div className="flex flex-wrap justify-between items-center py-6 border-t border-b border-gray-200 mb-12">
           {blog.tags && (
             <div className="flex items-center flex-wrap gap-2 mb-4 md:mb-0">
@@ -156,7 +153,6 @@ function BlogDetail() {
           </div>
         </div>
 
-    
         {blog.author && (
           <div className="bg-gray-50 rounded-xl p-6 mb-12 flex flex-col md:flex-row items-center gap-6">
             {blog.author.avatar && (
@@ -188,7 +184,6 @@ function BlogDetail() {
           </div>
         )}
 
-      
         {relatedBlogs.length > 0 && (
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Articles similaires</h2>
