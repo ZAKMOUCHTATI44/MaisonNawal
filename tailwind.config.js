@@ -9,7 +9,7 @@ export default {
       fontFamily: {
         sans: ['Arquitecta', 'sans-serif'],
         serif: ['Arquitecta', 'serif'],
-        body: ['Arquitecta', 'sans-serif'],
+        body: ['Arquitecta', 'sans-serif', ],
       },
     },
   },

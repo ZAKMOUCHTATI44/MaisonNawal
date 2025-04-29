@@ -1,25 +1,24 @@
 [
-    {
-      "id": "blog-01",
-      "image": "/imgCatalogue/epilation.png",
-      "date": "12",
-      "month": "Avril",
-      "categories": ["Coiffure", "Marrakech", "Bien-être"],
-      "title": "Maison Nawel : Le salon de beauté incontournable à Marrakech",
-      "excerpt": "Découvrez Maison Nawel, le salon de beauté qui redéfinit l'art du soin et du bien-être à Marrakech.",
-      "content": "Au cœur de la vibrante ville de Marrakech, Maison Nawel s’impose comme le salon de beauté haut de gamme qui redéfinit l’art du soin et du bien-être. Pensé comme un cocon de raffinement, ce lieu unique conjugue excellence, innovation et tradition marocaine dans une atmosphère chaleureuse et intimiste. Maison Nawel est bien plus qu’un institut de beauté : c’est le reflet d’un couple uni par la passion de sublimer les autres, avec élégance et authenticité.",
-      "slug": "maison-nawel-le-salon-de-beaute-incontournable-a-marrakech"
-    },
-    {
-      "id": "blog-02",
-      "image": "/imgCatalogue/epilation.png",
-      "date": "18",
-      "month": "Avril",
-      "categories": ["Rituel de beauté", "Relaxation", "Marrakech"],
-      "title": "Votre rituel bien-être dans un salon de beauté pas comme les autres",
-      "excerpt": "Maison Nawel vous invite à vivre un rituel de beauté unique, où chaque soin est une expérience.",
-      "content": "Dans une ville aussi vivante que Marrakech, il existe un lieu discret, élégant et lumineux, où l’on vient pour ralentir, respirer, se retrouver. Ce lieu, c’est Maison Nawel, une maison de beauté qui ne ressemble à aucune autre. Ici, on ne se contente pas d’embellir. On soigne, on écoute, on apaise. Maison Nawel n’est pas un simple salon de beauté. C’est un refuge. Un lieu où l’on vient avec le désir d’aller mieux.",
-      "slug": "votre-rituel-bien-etre-dans-un-salon-de-beaute-pas-comme-les-autres"
-    }
-  ]
-  
+  {
+    "id": "blog-01",
+    "image": "/imgCatalogue/epilation.png",
+    "date": "12",
+    "month": "Avril",
+    "categories": ["Coiffure", "Marrakech", "Bien-être"],
+    "title": "Maison Nawel : Le salon de beauté incontournable à Marrakech",
+    "excerpt": "Découvrez Maison Nawel, le salon de beauté qui redéfinit l’art du soin et du bien-être à Marrakech.",
+    "content": "Au cœur de la vibrante ville de Marrakech, Maison Nawel s’impose comme un salon de beauté haut de gamme redéfinissant l’art du soin et du bien-être. Pensé comme un cocon de raffinement, ce lieu unique conjugue excellence, innovation et tradition marocaine dans une atmosphère chaleureuse et intimiste.\n\nUn salon de coiffure au service de votre éclat\nChez Maison Nawel, la coiffure est bien plus qu’un simple service : c’est une véritable signature. Brushing structuré, coupes sur mesure, soins profonds, lissages, colorations personnalisées... chaque prestation est conçue pour révéler la personnalité et la beauté naturelle de chaque cliente. Nos experts capillaires, formés aux dernières tendances internationales, allient savoir-faire technique et écoute attentive pour offrir un résultat à la hauteur des attentes les plus exigeantes.\n\nUne vision portée par deux fondateurs passionnés\nMaison Nawel, c’est avant tout une histoire de cœur, de passion et de vision partagée. À l’origine de ce lieu d’exception se trouvent Nawel Debbouze et Fouad Ben Kouider, un couple dans la vie comme dans l’entrepreneuriat, animé par une ambition commune : redéfinir l’expérience beauté à Marrakech.\n\nNawel, passionnée de bien-être et de soins esthétiques depuis toujours, incarne la grâce, la précision et le sens du détail. Son rêve : créer un lieu où chaque femme se sent belle, écoutée et valorisée. À travers Maison Nawel, elle a insufflé une atmosphère douce, féminine et exigeante. Elle supervise avec rigueur le choix des prestations, la sélection des produits et la formation des équipes, afin que chaque cliente vive une expérience unique.\n\nFouad, de son côté, apporte une structure solide et une vision entrepreneuriale à ce rêve. Créatif et rigoureux, il conçoit Maison Nawel comme une marque à part entière, alliant hospitalité haut de gamme, identité forte et stratégie de croissance. Il pense chaque détail — de l’espace au service client — pour créer une expérience fluide, mémorable et irréprochable.\n\nEnsemble, Nawel et Fouad forment un duo inspirant, mêlant savoir-faire, passion, exigence... et amour. Leur complicité se reflète dans chaque recoin du salon, dans chaque geste de l’équipe, dans chaque soin pensé avec précision.\n\nL’adresse à retenir à Marrakech\nSitué sur l’élégant Boulevard Mohamed VI, Maison Nawel attire aussi bien une clientèle locale exigeante que des visiteurs en quête d’un moment d’exception. Ce salon est devenu en quelques années une référence incontournable pour celles et ceux qui souhaitent vivre une expérience beauté à la fois luxueuse et authentique.",
+    "slug": "maison-nawel-le-salon-de-beaute-incontournable-a-marrakech"
+  },
+  {
+    "id": "blog-02",
+    "image": "/imgCatalogue/epilation.png",
+    "date": "18",
+    "month": "Avril",
+    "categories": ["Rituel de beauté", "Relaxation", "Marrakech"],
+    "title": "Votre rituel bien-être dans un salon de beauté pas comme les autres",
+    "excerpt": "Maison Nawel vous invite à vivre un rituel de beauté unique, où chaque soin devient une expérience.",
+    "content": "Dans une ville aussi vibrante que Marrakech, il existe un lieu discret, élégant et lumineux, où l’on vient pour ralentir, respirer, se recentrer. Ce lieu, c’est Maison Nawel — une maison de beauté comme aucune autre. Ici, on ne se contente pas d’embellir. On soigne, on écoute, on apaise. On offre du temps, de l’attention, du vrai.\n\nPousser la porte de Maison Nawel, c’est s’offrir une parenthèse précieuse. Dès l’entrée, le tumulte de la ville s’efface. Le décor épuré, la lumière tamisée, les parfums subtils d’huiles et de fleurs… tout est pensé pour vous envelopper de sérénité. L’accueil est sincère, doux, presque familial. Vous n’êtes pas une cliente parmi d'autres : vous êtes une invitée.\n\nCe qui frappe à Maison Nawel, au-delà de la beauté du lieu, c’est la manière dont chaque soin est vécu. On ne parle pas de \"prestations\" ici, mais de rituels. Le massage devient un voyage intérieur. Le hammam, un art ancestral revisité avec raffinement. La coiffure, un geste d’expression. Et le maquillage, un moment de révélation, de confiance en soi retrouvée.\n\nLe savoir-faire est incontestable. Mais ce qui fait la différence, c’est l’intention. Sublimer sans jamais travestir. Révéler l’éclat naturel, sans le dissimuler. Respecter chaque trait, chaque besoin, chaque personnalité.\n\nCette philosophie est la signature de Nawel et Fouad, les fondateurs du lieu. Elle, passionnée de soins et de mise en beauté. Lui, architecte de l’expérience client et garant de l’excellence du service. Ensemble, ils ont créé un espace rare, intime, profondément humain.\n\nMaison Nawel n’est pas un simple salon de beauté. C’est un refuge. Un lieu où l’on vient avec le désir d’aller mieux. Un lieu où l’on confie sa peau, ses cheveux, ses mains — et parfois ses émotions. Et où l’on repart, le cœur un peu plus léger.\n\nDans un monde qui va trop vite, Maison Nawel vous propose de revenir à l’essentiel. De prendre le temps. D’apprécier le luxe du calme, de la douceur, de l’attention. Parce que prendre soin de soi n’est pas un caprice : c’est une nécessité.\n\nAlors, si vous cherchez plus qu’un rendez-vous beauté, si vous avez besoin d’un moment vrai, d’une bulle hors du temps… vous savez désormais où aller.\n\n📍 6 Boulevard Mohamed VI, Marrakech\n📞 +212 700 700 057\n📩 contact@maisonnawel.com",
+    "slug": "votre-rituel-bien-etre-dans-un-salon-de-beaute-pas-comme-les-autres"
+  }
+]
