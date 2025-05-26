@@ -43,7 +43,7 @@ function AboutSection() {
               <span className="inline-block px-4 py-1 bg-[#F8C8D5] text-[#000000] rounded-full text-sm font-medium">
                 MAISON DE BEAUTÉ
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif text-gray-800 mt-4">Bienvenue chez Maison Nawel</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-gray-800 mt-4">Fondé par Nawel Debbouze et Fouad Ben Kouider</h2>
             </div>
 
             <p className="text-gray-600 leading-relaxed">

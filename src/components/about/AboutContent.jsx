@@ -4,7 +4,7 @@ function AboutContent() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="grid md:grid-cols-2 gap-12 items-center">
-        {/* Image */}
+      
         <div className="relative">
           <img
             src={imgAbout || "/placeholder.svg?height=400&width=600"}
@@ -13,7 +13,6 @@ function AboutContent() {
           />
         </div>
 
-        {/* Texte */}
         <div className="space-y-6 text-left">
           <h2 className="text-3xl md:text-4xl font-serif text-gray-800">
             L'Élégance et le Bien-Être à Votre Portée

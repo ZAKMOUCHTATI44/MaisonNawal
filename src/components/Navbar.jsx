@@ -15,11 +15,13 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
             <div className="flex items-center">
+               <a href="/" className="flex items-center">
               <img
                 src={logo || "/placeholder.svg"}
                 alt="Maison Nawal Logo"
-                className="h-12 w-auto"
+                className="h-12 w-auto hover:opacity-80 transition-opacity duration-300"
               />
+            </a>
             </div>
           </div>
 
