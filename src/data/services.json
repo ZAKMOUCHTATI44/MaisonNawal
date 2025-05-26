@@ -92,6 +92,43 @@
         ]
       },
       {
+        "id": "body-therapy",
+        "title": "BODY THERAPY",
+        "image": "/imgCatalogue/terrapy.JPG",
+        "services": [
+          {
+            "name": "SERVIETTE CHAUDE",
+            "description": "Massage détente à l'aide de serviette chaude - Durée : 45 min",
+            "price": "350 DHS"
+          },
+          {
+            "name": "BODY FACE (60MIN)",
+            "description": "Massage détente relaxant anti-stress et anti-rides à l'huile de votre choix selon notre sélection",
+            "price": "500 DHS"
+          },
+          {
+            "name": "BODY FACE (30MIN)",
+            "description": "Massage détente relaxant anti-stress et anti-rides à l'huile de votre choix selon notre sélection",
+            "price": "250 DHS"
+          },
+          {
+            "name": "BODY FEET (60MIN)",
+            "description": "Massage des pieds à l'huile de votre choix selon notre sélection",
+            "price": "500 DHS"
+          },
+          {
+            "name": "BODY FEET (30MIN)",
+            "description": "Massage des pieds à l'huile de votre choix selon notre sélection",
+            "price": "250 DHS"
+          },
+          {
+            "name": "HIJAMA MASSAGE",
+            "description": "(Cupping therapy) Extraction des toxines du sang à l'aide de micro incisions et ventouses - Durée : 60 min",
+            "price": "500 DHS"
+          }
+        ]
+      },
+      {
         "id": "epilation",
         "title": "ÉPILATION",
         "image": "/imgCatalogue/epilation.png",
@@ -377,7 +414,6 @@
           }
         ]
       },
-          
       {
         "id": "cheveux",
         "title": "CÔTÉ CHEVEUX",
@@ -477,7 +513,7 @@
       },
       {
         "id": "atelier-regard",
-        "title": "L’ATELIER DU REGARD",
+        "title": "L'ATELIER DU REGARD",
         "image": "/imgCatalogue/atelier-de-regard.jpg",
         "services": [
           {
@@ -571,10 +607,5 @@
           { "name": "Tâches de rousseur", "price": "900 DHS" }
         ]
       }
-      
-      
-      
-      
     ]
   }
-  

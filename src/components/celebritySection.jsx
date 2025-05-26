@@ -68,10 +68,7 @@ function CelebritySection() {
         modifier: 2.5,
         slideShadows: false, 
       },
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      // },
+     
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -113,7 +110,7 @@ function CelebritySection() {
           <div className="swiper-button-prev !text-white !opacity-70 hover:!opacity-100 transition-opacity"></div>
           <div className="swiper-button-next !text-white !opacity-70 hover:!opacity-100 transition-opacity"></div>
 
-          {/* <div className="swiper-pagination !bottom-0 !text-white"></div> */}
+         
         </div>
       </div>
     </section>
