@@ -13,9 +13,18 @@ function App() {
   console.log("App component loaded");
 
   return (
-   <div className="">
-
-   </div>
+  <Router>
+      <div className="font-sans"> 
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/catalogue" element={<Catalogue />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
